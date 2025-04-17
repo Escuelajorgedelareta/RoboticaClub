@@ -1,0 +1,201 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #1c1c22;
+    color: #ffffff;
+}
+
+#home {
+    background-color: #070722;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    color: #fff;
+    margin: auto;
+}
+
+#home img {
+    max-width: 600px;
+    background-color: #0b2c50;
+    border-radius: 50%;
+    animation: fadeIn 6s infinite, imageSwap 13s infinite;
+    transition: all 2s;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 5px solid #007bff;
+    padding: 5px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes imageSwap {
+    0%, 100% {
+        content: url('/static/1728079413-removebg-preview.png');
+        border-radius: 100%;
+        min-width: 600px;
+        transition: all 2s;
+    }
+    50% {
+        content: url('https://www.frsr.utn.edu.ar/wp-content/uploads/2024/09/00-Robotin-Ppal.png');
+    }
+}
+
+#home .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 80%;
+}
+
+#home a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #007bff;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+}
+
+.c {
+    position: relative;
+    background-color: #007bff77;
+    padding: 2px;
+}
+
+#home a:hover {
+    background-color: #0056b3;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #05050f86;
+}
+
+.fondo {
+    padding: 200px;
+    text-align: center;
+    font-size: 22px;
+    background-color: #0f0f3b;
+}
+
+.fondo1 {
+    background-color: #0b2c50;
+    padding: 200px;
+    font-size: 30px;
+    text-align: start;
+}
+
+.fondo1 a {
+    background-color: #0056b3;
+    color: white;
+    padding: 20px 90px;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.fondo1 a:hover {
+    background-color: #1c3857;
+}
+
+footer {
+    background-color: #070722;
+    padding: 5px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+}
+
+.flecha {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 100px;
+    color: #007bff;
+    animation: flechaAnimada 1s ease-in-out infinite;
+}
+
+@keyframes flechaAnimada {
+    0%, 100% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(0);
+    }
+    50% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(10px);
+    }
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    #home {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    #home img {
+        border-radius: 0;
+        margin-top: 20px;
+        max-height: 400px;
+        max-width: 200px;
+        animation: none;
+        content: url('/static/1728079413-removebg-preview.png');
+    }
+
+    #home .content {
+        max-width: 100%;
+        gap: 10px;
+    }
+
+    #home a {
+        align-self: center;
+        padding: 15px 30px; /* Ajusta el tamaño del botón */
+    }
+
+    .fondo {
+        padding: 100px;
+        font-size: 18px; /* Reduce el tamaño de la fuente */
+    }
+
+    .fondo1 {
+        padding: 100px;
+        font-size: 24px;
+    }
+
+    .fondo1 a {
+        padding: 15px 50px; /* Ajusta el tamaño del botón */
+    }
+
+    nav {
+        font-size: 12px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+
+    .flecha {
+        font-size: 80px; /* Ajusta el tamaño de la flecha en dispositivos móviles */
+    }
+}
