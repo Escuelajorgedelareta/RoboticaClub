@@ -160,7 +160,7 @@ footer {
         max-height: 400px;
         max-width: 200px;
         animation: none;
-        content: url('/static/1728079413-removebg-preview.png');
+        content: url('static/1728079413-removebg-preview.png');
     }
 
     #home .content {
