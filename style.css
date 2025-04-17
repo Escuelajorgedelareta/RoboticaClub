@@ -44,7 +44,7 @@ body {
 
 @keyframes imageSwap {
     0%, 100% {
-        content: url('/static/1728079413-removebg-preview.png');
+        content: url('static/1728079413-removebg-preview.png');
         border-radius: 100%;
         min-width: 600px;
         transition: all 2s;
