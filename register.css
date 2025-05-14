@@ -1,140 +1,196 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #1c1c22;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-  }
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #1c1c22;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
 
-  h1 {
-    color: #fff;
-    margin-bottom: 20px;
-  }
+h1 {
+  color: #fff;
+  margin-bottom: 20px;
+  text-align: center;
+}
 
-  form {
-    background-color: #0b2c50;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
-    width: 90%;
-    max-width: 450px;
-    display: flex;
-    flex-direction: column;
-  }
+form {
+  background-color: #0b2c50;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
+  width: 90%;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+}
 
-  label {
-    margin: 10px 0 5px;
-    color: #ffffff;
-    font-weight: bold;
-  }
+label {
+  margin: 10px 0 5px;
+  color: #ffffff;
+  font-weight: bold;
+}
 
-  input, textarea {
-    background-color: #1c1c22;
-    color: white;
-    border: 1px solid #007bff;
-    padding: 10px;
-    border-radius: 8px;
-    font-size: 14px;
-    outline: none;
-    transition: 0.3s;
-  }
+input, textarea {
+  background-color: #1c1c22;
+  color: white;
+  border: 1px solid #007bff;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
 
-  input:focus, textarea:focus {
-    border-color: #1c3857;
-    background-color: #0f0f3b;
-  }
+input:focus, textarea:focus {
+  border-color: #1c3857;
+  background-color: #0f0f3b;
+}
 
-  textarea {
-    resize: vertical;
-    min-height: 80px;
-  }
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
 
-  .toggle-group {
-    display: flex;
-    gap: 15px;
-    margin: 10px 0;
-  }
-  
-  .toggle-group input[type="radio"] {
-    display: none;
-  }
-  
-  .toggle-group label {
-    padding: 10px 20px;
-    border: 2px solid #007bff;
-    border-radius: 8px;
-    background-color: #1c1c22;
-    color: white;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    user-select: none;
-  }
-  
-  .toggle-group input[type="radio"]:checked + label {
-    background-color: #007bff;
-    color: white;
-    border-color: #1c3857;
-    box-shadow: 0 0 10px #007bff66;
-  }
-  
-  .toggle-group label:hover {
-    background-color: #0f0f3b;
-  }
+.toggle-group {
+  display: flex;
+  gap: 15px;
+  margin: 10px 0;
+}
 
-  .contact-input {
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-    transform: translateY(-10px);
-    transition: all 0.4s ease;
-  }
+.toggle-group input[type="radio"] {
+  display: none;
+}
 
-  .contact-input.active {
-    opacity: 1;
-    max-height: 100px;
-    transform: translateY(0);
-    margin-bottom: 10px;
-  }
+.toggle-group label {
+  padding: 10px 20px;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  background-color: #1c1c22;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  user-select: none;
+}
 
-  button {
-    margin-top: 20px;
-    padding: 12px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
+.toggle-group input[type="radio"]:checked + label {
+  background-color: #007bff;
+  color: white;
+  border-color: #1c3857;
+  box-shadow: 0 0 10px #007bff66;
+}
 
-  button:hover {
-    background-color: #0056b3;
-  }
-  .boton-regresar {
-    display: inline-block;
-    padding: 12px 30px;
-    margin-top: 20px;
-    background-color: #007bff; /* Azul principal */
-    color: #fff;
-    text-decoration: none;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 123, 255, 0.4);
-    font-weight: bold;
-    transition: background-color 0.3s, transform 0.2s;
+.toggle-group label:hover {
+  background-color: #0f0f3b;
+}
+
+.contact-input {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transform: translateY(-10px);
+  transition: all 0.4s ease;
+}
+
+.contact-input.active {
+  opacity: 1;
+  max-height: 100px;
+  transform: translateY(0);
+  margin-bottom: 10px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.boton-regresar {
+  display: inline-block;
+  padding: 12px 30px;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.4);
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 .boton-regresar:hover {
-    background-color: #0056b3;
-    transform: scale(1.05); /* Efecto agrandado */
-    box-shadow: 0 0 12px rgba(0, 123, 255, 0.7);
+  background-color: #0056b3;
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(0, 123, 255, 0.7);
 }
+
 .text-center {
-    text-align: center;
+  text-align: center;
+}
+
+.year-division-group {
+  margin: 15px 0;
+  background-color: #1c1c22;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+}
+
+select#division {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  background-color: #1c1c22;
+  color: white;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+select#division:focus {
+  border-color: #1c3857;
+  background-color: #0f0f3b;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  form {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .toggle-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  button, .boton-regresar {
+    width: 100%;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
 }
